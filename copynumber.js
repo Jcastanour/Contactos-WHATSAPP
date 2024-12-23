@@ -20,7 +20,8 @@ function copiarNumero() {
 
     setTimeout(function () {
       var newSpanElement = document.evaluate(
-        "/html/body/div[1]/div/div/div[2]/div[5]/span/div/span/div/div/section/div[1]/div[2]/div/span/span",
+        //cLientes full xpath
+        "/html/body/div[1]/div/div/div[3]/div/div[5]/span/div/span/div/div/section/div[1]/div[2]/div/span/span",
         document,
         null,
         XPathResult.FIRST_ORDERED_NODE_TYPE,
@@ -48,8 +49,9 @@ function copiarNumero() {
           alert("No hay número que copiar");
         }
       } else {
+        //Empresas js path
         var newSpanElement = document.querySelector(
-          "#app > div > div.three._aigs.x1n2onr6.x13vifvy.x17qophe.x78zum5.xh8yej3.x5yr21d.x6ikm8r.x10wlt62.x1iek97a.x1w3jsh0.xf8xn22.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1g0ag68.xcgwb2z.x4afe7t.x1alahoq.x1j6awrg.x1m1drc7.x1n449xj.x162n7g1.xitxdhh.x134s4mn.x1s928wv.x1setqd9 > div._aig-.x1n2onr6.xyw6214.x5yr21d.x6ikm8r.x10wlt62.x17dzmu4.xy80clv.x26u7qi.x1ux35ld > span > div > span > div > div > section > div.x13mwh8y.x1q3qbx4.x1wg5k15.x1bnvlk4.x1n2onr6.x1c4vz4f.x2lah0s.xdl72j9.xyorhqc.x13x2ugz.x7sb2j6.x6x52a7.x1i2zvha.xxpdul3 > div.x1c4vz4f.xs83m0k.xdl72j9.x1g77sc7.x78zum5.xozqiw3.x1oa3qoh.x12fk4p8.xeuugli.x2lwn1j.x1nhvcw1.xdt5ytf.x6s0dn4 > div > span > span"
+          "#app > div > div.x78zum5.xdt5ytf.x5yr21d > div > div._aig-.x9f619.x1n2onr6.xyw6214.x5yr21d.x6ikm8r.x10wlt62.x17dzmu4.x1i1dayz.x2ipvbc.x1w8yi2h.xy80clv.x26u7qi.x1ux35ld > span > div > span > div > div > section > div.x13mwh8y.x1q3qbx4.x1wg5k15.x1bnvlk4.x1n2onr6.x1c4vz4f.x2lah0s.xdl72j9.xyorhqc.x13x2ugz.x1i80of2.x6x52a7.xxpdul3.x18d9i69 > div.xkhd6sd._ajxt > div > div > span > span"
         );
         console.log(newSpanElement);
         var newSearchText = newSpanElement.innerText.trim();
